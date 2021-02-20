@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Aswa Traders| INVOICE</title>
+    <style>
+
+        
+.footer{
+
+position: absolute;
+top: 1270px;  
+}
+
+.signature{
+position: absolute;
+top: 1220px;
+}
+
+.ntn{
+position: absolute;
+top: 1180px;
+}
+
+@media only print{
+.in-item{
+    display: none;
+}
+}
+
+input{
+border: none;
+border-bottom: 1px solid black;
+}
+
+.main, body{
+position: relative;
+width: 8.3in;
+height: 14.6in;
+}
+
+.border-d{
+
+border: 1px solid black;
+}
+.border-dl{
+
+border: 2px solid black;
+}
+
+.in-item input{
+width: 100%;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+<div>
+    <div class="container main p-0 m-0 ml-2 mr-3">
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0"><img class="logo img-fluid" src="logo-aswa.gif" alt=""></div>
+        </div>
+        <div class="row m-0 mt-2 "></div>
+        <div class="row p-0 m-0 ml-2 mb-4"> 
+            <div class="col-3"> <input type="text" placeholder="Invoice Number"></div>
+            <div class="col-3 offset-4"><input style="text-align: center;" type="date" ></div> 
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-3 ml-4 p-0"><label for="sold_input"> SOLD </label></div> 
+            <div class="col-6"><input id="sold_input" type="text"></div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-3 ml-4 p-0"><label for="product"> PRODUCT </label></div> 
+            <div class="col-6"><input id="product" type="text"></div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-3 ml-4 p-0"><label for="ntn"> NTN / CNIC </label></div> 
+            <div class="col-6"><input id="ntn" type="tel"></div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-3 ml-4 p-0"><label for="term"> TERM OF SALE </label></div> 
+            <div class="col-6"><input id="term" type="text"></div>
+        </div>
+        <div class="row p-0 m-0 mb-3">
+            <div class="col-3 ml-4 p-0"><label for="dispatch"> DISPATCH </label></div> 
+            <div class="col-6"><input id="dispatch" type="text"></div>
+        </div>
+
+
+        <div class="row p-0 m-0 in-item">
+            <!-- <div class="col-1 Serial"><label>SR<input type="tel"></label></div>    -->
+            <div class="col-2 disc"><label>Description<input type="text"></label></div>
+            <div class="col-1 bags"><label>bags<input type="tel"></label></div>
+            <div class="col-1 weights"><label>weight<input type="tel"></label></div>
+            <div class="col-2 prices"><label>price<input type="tel"></label></div>
+            <div class="col-2 typo"><label>price type 
+                <select name="" class="mt-2" style="border: none;" id="price_option">
+                    <option value="0">KG</option>
+                    <option value="1">BAGS</option>
+                </select>
+            </label></div>
+            <div class="col-2 sale-tax"><label>sales tax<input type="tel"></label></div>
+            <div class="col-2 further-tax"><label>furthur tax<input type="tel"></label></div>    
+        </div>
+
+        <div class="row justify-content-end pl-0 pr-0 pt-1 pb-1 m-0 in-item">
+            <div class="col-2"><div class="btn btn-info col-11 Submit-btn">ADD</div></div>
+        </div>
+
+    <div class="container table-data p-0 m-0">
+        <!-- // for filing data -->
+        <div class="row border-d p-0 m-0" style="font-size: smaller; font-weight: bold;">
+            <div class="col-1 p-1 border-d">SR</div>
+            <div class="col-2 p-1 border-d">Distribution of Goods / Service</div>
+            <div class="col-1 p-1 border-d">Quantity (bags)</div>
+            <div class="col-1 p-1 border-d">Quantity (KG)</div>
+            <div class="col-1 p-1 border-d">Rate</div>
+            <div class="col-2 p-1 border-d">Value Exclusive of Sales Tax Rs.</div>
+            <div class="col-1 p-1 border-d">Sales Tax</div>
+            <div class="col-1 p-1 border-d">Further Tax</div>
+            <div class="col-2 p-1 border-d">Value Inclusive of Sales Tax Rs.</div>
+        </div>
+    </div>
+
+    <div class="row p-0 m-0 ml-5 ntn" style="font-size: small;">
+        <div class="col-12"> NTN 6280511-5 <br> STRN 32277876194864 </div> 
+  </div>
+  <div class="row p-0 m-0 ml-5 signature">
+        <div class="col-12"  style="border-Top: 2px solid black ;"> <pre>Authorize Stemp / Signature           . </pre> </div> 
+  </div>
+         
+        <div class="row footer p-0 m-0">
+             <div class="col-12 p-0 m-0"><img class="logo img-fluid" src="footer.gif" alt=""></div>
+         </div> 
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            class Data_table{
+                static SR = 0;
+                static Total = 0;               
+
+                constructor( dis , bags , kg, rate, type, sale_t, furthur_t ){
+                 
+                    // this.value_in=0;
+                    // this.value_ex=0;
+                    Data_table.SR += 1;
+                    this.total_value=0;
+                    this.description = dis;
+                    this.bags = bags;
+                    this.weight = kg;
+                    this.rate = rate;
+                    this.type = type;
+                    //calling value exclusive
+                    this.value_exc(kg , bags );
+                    
+                    this.sale_t = sale_t;
+                    //caing sale tax
+                    this.sale_tax();
+                    
+                    this.furthur_t =furthur_t;
+                    //calling furthur tax
+                    this.furthur_tax();
+                    
+                    //calling value inclusive
+                    this.value_inc();
+                
+                    //TOTAL VALUE
+                    Data_table.Total += this.value_in;
+                }
+
+                value_exc(kg, bags){
+                    if(this.type==0){
+                        this.value_ex = this.rate * kg;
+                    }
+                    else{
+                        this.value_ex = this.rate * bags;                        
+                    }
+                }
+
+                sale_tax(){
+                    this.sale_t = (this.sale_t/100)*this.value_ex; 
+                }
+
+                furthur_tax(){
+                    this.furthur_t = (this.furthur_t/100)*this.value_ex; 
+                }
+
+                value_inc(){
+                    this.value_in = (this.furthur_t + this.sale_t + this.value_ex);
+                }
+
+                get Description(){
+                    return this.description;
+                }
+
+                get Bags(){
+                    return this.bags;
+                }
+
+                get Weight(){
+                    return this.weight;
+                }
+                 
+                get Price(){
+                    return this.rate;
+                }
+
+                get Price_type(){
+                    if(this.type==0){
+                        return "/KG";
+                    }
+                    else{
+                        return "/BAG";
+                    }
+                }
+
+                get value_exclude(){
+                    return this.value_ex;
+                }
+
+                get value_include(){
+                    return this.value_in;
+                }
+
+                get sales_tax(){
+                    return this.sale_t;
+                }
+
+                get furthurs_tax(){
+                    return this.furthur_t;
+                }
+
+            }
+            
+
+
+
+// in words
+// System for American Numbering 
+var th_val = ['', 'thousand', 'million', 'billion', 'trillion'];
+// System for uncomment this line for Number of English 
+// var th_val = ['','thousand','million', 'milliard','billion'];
+ 
+var dg_val = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+var tn_val = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+var tw_val = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+function toWordsconver(s) {
+  s = s.toString();
+    s = s.replace(/[\, ]/g, '');
+    if (s != parseFloat(s))
+        return 'not a number ';
+    var x_val = s.indexOf('.');
+    if (x_val == -1)
+        x_val = s.length;
+    if (x_val > 15)
+        return 'too big';
+    var n_val = s.split('');
+    var str_val = '';
+    var sk_val = 0;
+    for (var i = 0; i < x_val; i++) {
+        if ((x_val - i) % 3 == 2) {
+            if (n_val[i] == '1') {
+                str_val += tn_val[Number(n_val[i + 1])] + ' ';
+                i++;
+                sk_val = 1;
+            } else if (n_val[i] != 0) {
+                str_val += tw_val[n_val[i] - 2] + ' ';
+                sk_val = 1;
+            }
+        } else if (n_val[i] != 0) {
+            str_val += dg_val[n_val[i]] + ' ';
+            if ((x_val - i) % 3 == 0)
+                str_val += 'hundred ';
+            sk_val = 1;
+        }
+        if ((x_val - i) % 3 == 1) {
+            if (sk_val)
+                str_val += th_val[(x_val - i - 1) / 3] + ' ';
+            sk_val = 0;
+        }
+    }
+    if (x_val != s.length) {
+        var y_val = s.length;
+        str_val += 'point ';
+        for (var i = x_val + 1; i < y_val; i++)
+            str_val += dg_val[n_val[i]] + ' ';
+    }
+    return str_val.replace(/\s+/g, ' ');
+}
+//in words
+
+
+
+
+            
+            
+            $('.Submit-btn').click(function(){
+
+                let dataSerail = [];
+                var input_data = {
+                description_value : "Non",
+                bags : 0,
+                Kgs : 0,
+                prices : 0,
+                prices_type : 0,
+                sale_taxes: 0,
+                further_taxes: 0
+                }; 
+
+                input_data[0] = $('.disc input').val();
+                input_data[1] = $('.bags input').val();
+                input_data[2] = $('.weights input').val();
+                input_data[3] = $('.prices input').val();
+                input_data[4] = $('.typo select').val();
+                input_data[5] = $('.sale-tax input').val();
+                input_data[6] = $('.further-tax input').val();
+               
+                data_f = new Data_table(input_data[0],input_data[1],input_data[2],input_data[3],input_data[4],input_data[5],input_data[6]);
+                
+                dataSerail.push(data_f);
+
+                // data_f.Description  
+                // data_f.Bags         
+                // data_f.Weight       
+                // data_f.Price        
+                // data_f.value_exclude    
+                // data_f.sale_tax         
+                // data_f.furthur_tax      
+                // data_f.value_include    
+
+                
+                $('.table-data').append("<div class=\"row p-0 m-0 border-dl pt-2\" style=\"font-size: smaller;\"><div class=\"col-1\">"+ Data_table.SR +"</div><div class=\"col-2\">"+ data_f.Description   +"</div><div class=\"col-1\">"+ data_f.Bags          +"</div><div class=\"col-1\">"+ data_f.Weight        +"</div><div class=\"col-1 p-0\">"+ data_f.Price +"<span class=\"p-0 m-0\" style=\"font-size: x-small;\">"+data_f.Price_type +"</span>"+ "</div><div class=\"col-2\">"+ data_f.value_exclude +"</div><div class=\"col-1\">"+ parseFloat(data_f.sales_tax.toFixed(2))     +"</div><div class=\"col-1\">"+ parseFloat(data_f.furthurs_tax.toFixed(3))    +"</div><div class=\"col-2\">"+ parseFloat(data_f.value_include.toFixed(3)) +"</div></div>");
+                $('.remove-all').remove();
+                $('.table-data').after("<div class=\"row p-0 m-0 remove-all border-dl pt-2\" style=\"font-size: small;\"><div class=\"col-2\"> <b>TOTAL</b> </div> <div class=\"col-4\"> <b>"+ parseFloat(Data_table.Total.toFixed(3)) +"</b></div> </div> <div class=\"row remove-all p-0 m-0 border-dl pt-2\" style=\"font-size: small;\"><div class=\"col-3\"><b>Amount in Words.</b></div><div class=\"col-9\"><b>"+ toWordsconver(parseFloat(Data_table.Total.toFixed(0))) +"</b></div></div>");
+
+                // alert(dataSerail.pop().value_include + " " +Data_table.SR + " " + Data_table.Total);
+            });
+            
+
+            // declare class obeject
+           
+            // window.alert("Hello I have serial No: " + Data_table.SR + " value total " + Data_table.Total);
+
+        });
+    </script>
+
+
+</body>
+</html>
